@@ -1,0 +1,291 @@
+/* Reseteo */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html {
+  height: auto;
+  width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  min-height: 100%;
+}
+
+.container {
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+
+main{
+  background: rgb(100,89,134);
+  background: linear-gradient(180deg, rgba(100,89,134,1) 30%, rgba(78,2,80,1) 100%);
+}
+
+.main h1{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2rem;
+    font-weight: bold;
+    color: aliceblue;
+    text-shadow: #4f759b ;
+}
+
+a{
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, #4f759b);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
+}
+
+a:hover, a:focus {
+background-size: 100% 2px;
+}
+
+/*----------HEADER---------------*/
+
+.header {
+    padding: 0;
+    background: rgb(100,89,134);
+    background: linear-gradient(0deg, rgba(100,89,134,1) 0%, rgba(78,2,80,1) 100%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header--logo {
+  width: 8.5rem;
+  height: auto;
+  grid-area: logo;
+}
+
+.header--logo img {
+  width: 100%;
+  height: auto;
+}
+
+/*--------------NAVBAR-------------*/
+
+.header--navbar {
+    grid-area: navbar;
+}
+
+.header--navbar--menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header--navbar--menu ul li {
+  display: inline-block;
+  margin-left: 5rem;
+}
+
+.header--navbar--menu li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1.1rem;
+  color: aliceblue;
+}
+
+/*---------------BODY-----------------*/
+
+.main--container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "cardUno cardDos cardTres"
+    "cardCuatro cardCinco cardSeis";
+}
+
+#cardUno {
+  grid-area: cardUno;
+}
+
+#cardDos {
+  grid-area: cardDos;
+}
+
+#cardTres {
+  grid-area: cardTres;
+}
+
+#cardCuatro {
+  grid-area: cardCuatro;
+}
+
+#cardCinco {
+  grid-area: cardCinco;
+}
+
+#cardSeis {
+  grid-area: cardSeis;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  margin: 1rem;
+  background-color: #4f759b;
+  color: aliceblue;
+  border-radius: 2rem;
+  border: black solid;
+}
+
+.card--titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 1rem;
+}
+
+.card--texto {
+  font-size: 1.8rem;
+  width: 100%;
+  text-align: center;
+}
+
+/* Section */
+
+.section{
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    gap: 5rem;
+    padding: 5rem;
+}
+
+.section--texto{
+  width: 100%;
+  font-size: 2rem;
+  text-align: justify;
+}
+
+section img{
+  border-radius: 3rem;
+}
+
+/*----------FOOTER------*/
+
+.footer {
+  background-color: #4e0250;
+  padding-top: 2rem;
+  grid-area: footer;
+  overflow: hidden;
+}
+
+.footer__flex1 {
+  display: flex;
+  padding: 2rem;
+  margin: 2rem;
+  justify-content: space-evenly;
+}
+
+.footer__flex1 a {
+  color: aliceblue;
+}
+
+.footer--navbar--menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+
+.footer--navbar--menu ul li {
+  display: inline-block;
+  margin-left: 5rem;
+}
+
+.footer--navbar--menu li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1.1rem;
+  color: aliceblue;
+}
+
+/* ---Media Querie--- */
+
+/* ---Vista Movil--- */
+@media only screen and (max-width: 599px) {
+    .header{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "logo"
+        "navbar";
+    }
+
+    .header--navbar--menu{
+        flex-direction: column;
+    }
+
+    .main--container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "cardUno"
+        "cardDos"
+        "cardTres"
+        "cardCuatro"
+        "cardCinco"
+        "cardSeis";
+    }
+
+    .footer--navbar--menu{
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* ---Vista Tablet--- */
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+    .header{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "logo"
+        "navbar";
+    }
+    .main--container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "cardUno cardDos"
+        "cardTres cardCuatro"
+        "cardCinco cardSeis";
+    }
+}
