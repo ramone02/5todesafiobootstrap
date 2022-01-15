@@ -8,120 +8,137 @@
     <script src="https://kit.fontawesome.com/67efa75ecc.js" crossorigin="anonymous"></script>
     <title>Eure-k Diseño Multimedial</title>
     <link rel="icon" href="./img/logo4.ico" />
-    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 
-<!-- Grid -->
 <body>
     <!-- Header -->
-    <header class="header">
-            <div class="header--logo">
-                <img src="./img/logoico.ico" alt="logo">
+    <header class="container-fluid shadow-sm p-3 mb-5 bg-body rounded">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid gap-3">
+                <a class="navbar-brand" href="#index"></a>
+                <img src="./img/logoico.ico" width="160" height="130" alt="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav gap-3">
+                        <a class="btn btn-outline-dark" aria-current="page" href="index.html">Inicio</a>
+                        <a class="btn btn-outline-dark" aria-current="page" href="tienda.html">Tienda</a>
+                        <a class="btn btn-outline-dark" aria-current="page" href="servicios.html">Servicios</a>
+                        <a class="btn btn-outline-dark" aria-current="page" href="nosotros.html">Nosotros</a>
+                        <a class="btn btn-outline-dark" aria-current="page" href="contacto.html">Contacto</a>
+                    </div>
+                </div>
             </div>
-            <nav class="header--navbar">
-                <ul class="header--navbar--menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="tienda.html">Tienda</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+        </nav>
     </header>
     <!-- Main -->
-    <main class="main">
-        <div class=" container main--container">
-            <section class="card" id="cardUno">
-                <div class="card--titulo">
-                    <h2>Novedad</h2>
+    <main class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card bg-dark text-white">
+                    <h5 class="card-title text-center m-3">Novedad</h5>
+                    <img src="./img/publicidad.jpg" class="card-img-top" alt="publicidad">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis
+                            reprehenderit quae nostrum, amet ut maxime non impedit, vitae similique nobis repudiandae
+                            placeat unde libero, dolor neque porro illum nisi.</p>
+                    </div>
                 </div>
-                <img src="./img/publicidad.jpg" class="" alt="publicidad" />
-                <div class="card--texto">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti illo doloremque expedita
-                        corporis iusto quaerat fuga voluptas nobis. Optio, magnam? Quos temporibus reprehenderit, ullam
-                        nostrum vel perferendis quibusdam. Id, commodi?</p>
+            </div>
+            <div class="col">
+                <div class="card bg-dark text-white">
+                    <h5 class="card-title text-center m-3">Novedad</h5>
+                    <img src="./img/promocion.jpg" class="card-img-top" alt="diseño">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis
+                            reprehenderit quae nostrum, amet ut maxime non impedit, vitae similique nobis repudiandae
+                            placeat unde libero, dolor neque porro illum nisi.</p>
+                    </div>
                 </div>
-            </section>
-            <section class="card" id="cardDos">
-                <div class="card--titulo">
-                    <h2>Novedad</h2>
+            </div>
+            <div class="col">
+                <div class="card bg-dark text-white">
+                    <h5 class="card-title text-center m-3">Novedad</h5>
+                    <img src="./img/promocion.jpg" class="card-img-top" alt="diseño">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis
+                            reprehenderit quae nostrum, amet ut maxime non impedit, vitae similique nobis repudiandae
+                            placeat unde libero, dolor neque porro illum nisi.</p>
+                    </div>
                 </div>
-                <img src="./img/diseñopersonalizado.jpg" class="" alt="publicidad" />
-                <div class="card--texto">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti illo doloremque expedita
-                        corporis iusto quaerat fuga voluptas nobis. Optio, magnam? Quos temporibus reprehenderit, ullam
-                        nostrum vel perferendis quibusdam. Id, commodi?</p>
+            </div>
+            <div class="col">
+                <div class="card bg-dark text-white">
+                    <h5 class="card-title text-center m-3">Novedad</h5>
+                    <img src="./img/publicidad.jpg" class="card-img-top" alt="publicidad">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis
+                            reprehenderit quae nostrum, amet ut maxime non impedit, vitae similique nobis repudiandae
+                            placeat unde libero, dolor neque porro illum nisi.</p>
+                    </div>
                 </div>
-            </section>
-            <section class="card" id="cardTres">
-                <div class="card--titulo">
-                    <h2>Novedad</h2>
+            </div>
+            <div class="col">
+                <div class="card bg-dark text-white">
+                    <h5 class="card-title text-center m-3">Novedad</h5>
+                    <img src="./img/publicidad.jpg" class="card-img-top" alt="publicidad">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis
+                            reprehenderit quae nostrum, amet ut maxime non impedit, vitae similique nobis repudiandae
+                            placeat unde libero, dolor neque porro illum nisi.</p>
+                    </div>
                 </div>
-                <img src="./img/publicidad.jpg" class="" alt="publicidad" />
-                <div class="card--texto">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti illo doloremque expedita
-                        corporis iusto quaerat fuga voluptas nobis. Optio, magnam? Quos temporibus reprehenderit, ullam
-                        nostrum vel perferendis quibusdam. Id, commodi?</p>
+            </div>
+            <div class="col">
+                <div class="card bg-dark text-white">
+                    <h5 class="card-title text-center m-3">Novedad</h5>
+                    <img src="./img/promocion.jpg" class="card-img-top" alt="diseño">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis
+                            reprehenderit quae nostrum, amet ut maxime non impedit, vitae similique nobis repudiandae
+                            placeat unde libero, dolor neque porro illum nisi.</p>
+                    </div>
                 </div>
-            </section>
-            <section class="card" id="cardCuatro">
-                <div class="card--titulo">
-                    <h2>Novedad</h2>
-                </div>
-                <img src="./img/diseñopersonalizado.jpg" class="" alt="publicidad" />
-                <div class="card--texto">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti illo doloremque expedita
-                        corporis iusto quaerat fuga voluptas nobis. Optio, magnam? Quos temporibus reprehenderit, ullam
-                        nostrum vel perferendis quibusdam. Id, commodi?</p>
-                </div>
-            </section>
-            <section class="card" id="cardCinco">
-                <div class="card--titulo">
-                    <h2>Novedad</h2>
-                </div>
-                <img src="./img/publicidad.jpg" class="" alt="publicidad" />
-                <div class="card--texto">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti illo doloremque expedita
-                        corporis iusto quaerat fuga voluptas nobis. Optio, magnam? Quos temporibus reprehenderit, ullam
-                        nostrum vel perferendis quibusdam. Id, commodi?</p>
-                </div>
-            </section>
-            <section class="card" id="cardSeis">
-                <div class="card--titulo">
-                    <h2>Novedad</h2>
-                </div>
-                <img src="./img/diseñopersonalizado.jpg" class="" alt="publicidad" />
-                <div class="card--texto">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti illo doloremque expedita
-                        corporis iusto quaerat fuga voluptas nobis. Optio, magnam? Quos temporibus reprehenderit, ullam
-                        nostrum vel perferendis quibusdam. Id, commodi?</p>
-                </div>
-            </section>
+            </div>
         </div>
     </main>
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer__flex1">
+    <footer class="container-fluid shadow-sm p-3 mb-5 bg-body rounded mt-5">
+        <div class="d-flex justify-content-evenly m-5">
             <div>
-                <a href=""> <i class="fab fa-facebook"></i></a>
+                <button type="button" class="btn btn-primary"><i class="fab fa-facebook"></i></button>
             </div>
             <div>
-                <a href=""><i class="fab fa-instagram"></i></a>
+                <button type="button" class="btn btn-dark"><i class="fab fa-instagram"></i></button>
             </div>
             <div>
-                <a href=""><i class="fab fa-whatsapp"></i></a>
+                <button type="button" class="btn btn-success"><i class="fab fa-whatsapp"></i></button>
             </div>
         </div>
-        <nav class="footer--navbar">
-            <ul class="footer--navbar--menu">
-                <li><a href="">Ayuda</a></li>
-                <li><a href="">Promociones</a></li>
-                <li><a href="">Sugerencias</a></li>
-                <li><a href="">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="d-flex justify-content-evenly m-5">
+            <div>
+                <a class="nav-link link-dark" href="">Ayuda</a>
+            </div>
+            <div>
+                <a class="nav-link link-dark" href="">Promociones</a>
+            </div>
+            <div>
+                <a class="nav-link link-dark" href="">Sugerencias</a>
+            </div>
+            <div>
+                <a class="nav-link link-dark" href="">Contacto</a>
+            </div>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js"></script>
 </body>
 
 </html>

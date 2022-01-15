@@ -2,82 +2,110 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/67efa75ecc.js" crossorigin="anonymous"></script>
     <title>Eure-k Diseño Multimedial</title>
     <link rel="icon" href="./img/logo4.ico" />
-    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 
-<body id="grilla">
+<body>
     <!-- Header -->
-    <header class="header">
-        <!-- <div class="container header--container"> -->
-        <div class="header--logo">
-            <img src="./img/logoico.ico" class="logo" alt="logo">
-        </div>
-        <nav class="header--navbar">
-            <ul class="header--navbar--menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="tienda.html">Tienda</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+    <header class="container-fluid shadow-sm p-3 mb-5 bg-body rounded">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid gap-3">
+                <a class="navbar-brand" href="#index"></a>
+                <img src="./img/logoico.ico" width="160" height="130" alt="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav gap-3">
+                        <a class="btn btn-outline-dark" aria-current="page" href="index.html">Inicio</a>
+                        <a class="btn btn-outline-dark" aria-current="page" href="tienda.html">Tienda</a>
+                        <a class="btn btn-outline-dark" aria-current="page" href="servicios.html">Servicios</a>
+                        <a class="btn btn-outline-dark" aria-current="page" href="nosotros.html">Nosotros</a>
+                        <a class="btn btn-outline-dark" aria-current="page" href="contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- Main -->
-    <main class="main">
-        <div class="container main--container">
-            <section class="section">
-                <div>
-                    <h2>Formulario de Contacto</h2>
-                    <form action="">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" id="nombre">
-                        <br><br>
-                        <label for="apellido">Apellido</label>
-                        <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido" required>
-                        <br><br>
-                        <label for="email">Correo</label>
-                        <input type="email" name="email" id="email" placeholder="Ingrese su correo" required>
-                        <br><br>
-                        <label for="consulta">Consulta</label> <br>
-                        <textarea name="consulta" id="" cols="30" rows="10"></textarea>
-                        <br><br>
-                        <br><br>
-                        <button type="submit">Enviar</button>
-                    </form>
+    <main class="container">
+        <div class="mt-5">
+            <div class="row">
+                <div class="col-md-8 ml-5">
+                    <div class="card-body">
+                        <h2 class="card-title">Formulario de Contacto</h2>
+                        <form action="">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Nombre</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Apellido</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Correo</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                    style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">Comments</label>
+                            </div>
+                            <button type="submit" class="btn btn-success">Enviar</button>
+                        </form>
+                    </div>
                 </div>
-            </section>
+                <div class="col">
+                    <img src="./img/logo4.png" class="img-fluid rounded-start" alt="logo">
+                </div>
+            </div>
         </div>
     </main>
     <!-- Footer -->
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer__flex1">
+    <footer class="container-fluid shadow-sm p-3 mb-5 bg-body rounded mt-5">
+        <div class="d-flex justify-content-evenly m-5">
             <div>
-                <a href=""> <i class="fab fa-facebook"></i></a>
+                <button type="button" class="btn btn-primary"><i class="fab fa-facebook"></i></button>
             </div>
             <div>
-                <a href=""><i class="fab fa-instagram"></i></a>
+                <button type="button" class="btn btn-dark"><i class="fab fa-instagram"></i></button>
             </div>
             <div>
-                <a href=""><i class="fab fa-whatsapp"></i></a>
+                <button type="button" class="btn btn-success"><i class="fab fa-whatsapp"></i></button>
             </div>
         </div>
-        <nav class="footer--navbar">
-            <ul class="footer--navbar--menu">
-                <li><a href="">Ayuda</a></li>
-                <li><a href="">Promociones</a></li>
-                <li><a href="">Sugerencias</a></li>
-                <li><a href="">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="d-flex justify-content-evenly m-5">
+            <div>
+                <a class="nav-link link-dark" href="">Ayuda</a>
+            </div>
+            <div>
+                <a class="nav-link link-dark" href="">Promociones</a>
+            </div>
+            <div>
+                <a class="nav-link link-dark" href="">Sugerencias</a>
+            </div>
+            <div>
+                <a class="nav-link link-dark" href="">Contacto</a>
+            </div>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js"></script>
 </body>
 
 </html>
